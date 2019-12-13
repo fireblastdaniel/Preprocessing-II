@@ -1,1 +1,30 @@
 // Navigation Styles here
+.header{
+    width:100%;
+    .dashed-border();
+    .header-container{
+        margin:2% auto;
+        max-width:800px;
+        .flex(space-between, center);
+
+        @media @mobile{
+            flex-direction:column;
+
+            h1{
+                font-size:3.0rem;
+                padding:3%;
+            }
+        }
+
+    } // Close header-container
+    nav{
+        width:40%;
+        .flex(space-around, center);
+        a{
+            .text-style(none, 1.5rem, @shark);
+        }
+        @media @mobile{
+            width:90%;
+        }
+    } // Close header nav
+}// Close header

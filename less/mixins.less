@@ -1,1 +1,25 @@
 // Mixins in here
+.flex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.text-style(@decoration, @size, @color){
+    text-decoration:@decoration;
+    font-size:@size;
+    color:@color;
+}
+
+.dashed-border(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.sign-up-button(@border, @border-radius, @text-color, @padding, @text-size){
+    border:@border;
+    border-radius:@border-radius;
+    background-color:@button-bg;
+    color:@text-color;
+    padding:@padding;
+    font-size:@text-size;
+}
